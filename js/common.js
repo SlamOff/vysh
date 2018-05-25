@@ -53,7 +53,7 @@ document.getElementById("seconds"));
 
 
 
-	/*
+	
 
 	$('.scroll').click( function(){
 	var scrollEl = $(this).attr('href');
@@ -125,10 +125,10 @@ document.getElementById("seconds"));
 	});
 	*/
 
-	/*
+	
 	//validation
 		var locationURL = window.location.search;
-	if ( locationURL == "?p=179&lang=ua" ) {
+	if ( locationURL == "/index_ua.html" ) {
 		var validationName = "Обов'язково для заповнення";
 		var validationNameMax = "Від 2 до 16 літер";
 		var validationPhone = "Введіть вірний номер";
@@ -172,8 +172,337 @@ document.getElementById("seconds"));
 			}
 		}
 	});
+	$('#mainForm').validate({
+		rules: {
+			name: {
+				required: true,
+				minlength: 2,
+				maxlength: 16
+			},
+			email: {
+				required: true,
+				email: true
+			},
+			phone: {
+				required: true
+			}
+		},
+		messages: {
+			name: {
+				required: validationName,
+				minlength: validationNameMax,
+				maxlength: validationNameMax
+			},
+			email: {
+				required: validationName,
+				email: validationEmail
+			},
+			phone: {
+				required: validationPhone
+			}
+		}
+	});
+	$('#product1Form').validate({
+		rules: {
+			name: {
+				required: true,
+				minlength: 2,
+				maxlength: 16
+			},
+			email: {
+				required: true,
+				email: true
+			},
+			phone: {
+				required: true
+			}
+		},
+		messages: {
+			name: {
+				required: validationName,
+				minlength: validationNameMax,
+				maxlength: validationNameMax
+			},
+			email: {
+				required: validationName,
+				email: validationEmail
+			},
+			phone: {
+				required: validationPhone
+			}
+		}
+	});
+	$('#product2Form').validate({
+		rules: {
+			name: {
+				required: true,
+				minlength: 2,
+				maxlength: 16
+			},
+			email: {
+				required: true,
+				email: true
+			},
+			phone: {
+				required: true
+			}
+		},
+		messages: {
+			name: {
+				required: validationName,
+				minlength: validationNameMax,
+				maxlength: validationNameMax
+			},
+			email: {
+				required: validationName,
+				email: validationEmail
+			},
+			phone: {
+				required: validationPhone
+			}
+		}
+	});
+	$('#product3Form').validate({
+		rules: {
+			name: {
+				required: true,
+				minlength: 2,
+				maxlength: 16
+			},
+			email: {
+				required: true,
+				email: true
+			},
+			phone: {
+				required: true
+			}
+		},
+		messages: {
+			name: {
+				required: validationName,
+				minlength: validationNameMax,
+				maxlength: validationNameMax
+			},
+			email: {
+				required: validationName,
+				email: validationEmail
+			},
+			phone: {
+				required: validationPhone
+			}
+		}
+	});
+	$('#banner_Form').validate({
+		rules: {
+			name: {
+				required: true,
+				minlength: 2,
+				maxlength: 16
+			},
+			email: {
+				required: true,
+				email: true
+			},
+			phone: {
+				required: true
+			}
+		},
+		messages: {
+			name: {
+				required: validationName,
+				minlength: validationNameMax,
+				maxlength: validationNameMax
+			},
+			email: {
+				required: validationName,
+				email: validationEmail
+			},
+			phone: {
+				required: validationPhone
+			}
+		}
+	});
+	$('#bottom_Form').validate({
+		rules: {
+			name: {
+				required: true,
+				minlength: 2,
+				maxlength: 16
+			},
+			email: {
+				required: true,
+				email: true
+			},
+			phone: {
+				required: true
+			}
+		},
+		messages: {
+			name: {
+				required: validationName,
+				minlength: validationNameMax,
+				maxlength: validationNameMax
+			},
+			email: {
+				required: validationName,
+				email: validationEmail
+			},
+			phone: {
+				required: validationPhone
+			}
+		}
+	});
+	$('#service1Form').validate({
+		rules: {
+			name: {
+				required: true,
+				minlength: 2,
+				maxlength: 16
+			},
+			email: {
+				required: true,
+				email: true
+			},
+			phone: {
+				required: true
+			}
+		},
+		messages: {
+			name: {
+				required: validationName,
+				minlength: validationNameMax,
+				maxlength: validationNameMax
+			},
+			email: {
+				required: validationName,
+				email: validationEmail
+			},
+			phone: {
+				required: validationPhone
+			}
+		}
+	});
+	$('#service2Form').validate({
+		rules: {
+			name: {
+				required: true,
+				minlength: 2,
+				maxlength: 16
+			},
+			email: {
+				required: true,
+				email: true
+			},
+			phone: {
+				required: true
+			}
+		},
+		messages: {
+			name: {
+				required: validationName,
+				minlength: validationNameMax,
+				maxlength: validationNameMax
+			},
+			email: {
+				required: validationName,
+				email: validationEmail
+			},
+			phone: {
+				required: validationPhone
+			}
+		}
+	});
+	$('#service3Form').validate({
+		rules: {
+			name: {
+				required: true,
+				minlength: 2,
+				maxlength: 16
+			},
+			email: {
+				required: true,
+				email: true
+			},
+			phone: {
+				required: true
+			}
+		},
+		messages: {
+			name: {
+				required: validationName,
+				minlength: validationNameMax,
+				maxlength: validationNameMax
+			},
+			email: {
+				required: validationName,
+				email: validationEmail
+			},
+			phone: {
+				required: validationPhone
+			}
+		}
+	});
+	$('#stepForm').validate({
+		rules: {
+			name: {
+				required: true,
+				minlength: 2,
+				maxlength: 16
+			},
+			email: {
+				required: true,
+				email: true
+			},
+			phone: {
+				required: true
+			}
+		},
+		messages: {
+			name: {
+				required: validationName,
+				minlength: validationNameMax,
+				maxlength: validationNameMax
+			},
+			email: {
+				required: validationName,
+				email: validationEmail
+			},
+			phone: {
+				required: validationPhone
+			}
+		}
+	});
+	$('#contactForm').validate({
+		rules: {
+			name: {
+				required: true,
+				minlength: 2,
+				maxlength: 16
+			},
+			email: {
+				required: true,
+				email: true
+			},
+			phone: {
+				required: true
+			}
+		},
+		messages: {
+			name: {
+				required: validationName,
+				minlength: validationNameMax,
+				maxlength: validationNameMax
+			},
+			email: {
+				required: validationName,
+				email: validationEmail
+			},
+			phone: {
+				required: validationPhone
+			}
+		}
+	});
 
-	*/
 
 
 });
