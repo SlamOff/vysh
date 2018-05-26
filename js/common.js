@@ -202,6 +202,36 @@ document.getElementById("seconds"));
 			}
 		}
 	});
+	$('#main2Form').validate({
+		rules: {
+			name: {
+				required: true,
+				minlength: 2,
+				maxlength: 16
+			},
+			email: {
+				required: true,
+				email: true
+			},
+			phone: {
+				required: true
+			}
+		},
+		messages: {
+			name: {
+				required: validationName,
+				minlength: validationNameMax,
+				maxlength: validationNameMax
+			},
+			email: {
+				required: validationName,
+				email: validationEmail
+			},
+			phone: {
+				required: validationPhone
+			}
+		}
+	});
 	$('#product1Form').validate({
 		rules: {
 			name: {
